@@ -28,17 +28,20 @@ class MyHomePage extends StatelessWidget {
         alignment: Alignment.center,
         children: <Widget>[
           Container(
-            width: 700,
-            child: Image.asset(
-              'images/todo.jpg',
-              fit: BoxFit.contain,
+            width: 300,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 100.0),
+              child: Image.asset(
+                'images/todo.png',
+                fit: BoxFit.contain,
+              ),
             ),
           ),
           Positioned(
             child: Text(
               "Todos",
               style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.indigo[600],
                   fontSize: 40,
                   fontWeight: FontWeight.bold),
             ),
@@ -92,7 +95,7 @@ class MyHomePage extends StatelessWidget {
                         Icons.add,
                         color: Colors.white,
                       ),
-                      backgroundColor: Colors.orange[200],
+                      backgroundColor: Colors.deepOrange[200],
                       onPressed: () {},
                     ),
                   ),
