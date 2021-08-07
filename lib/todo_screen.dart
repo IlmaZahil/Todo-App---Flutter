@@ -32,21 +32,21 @@ class _TodoScreenState extends State<TodoScreen> {
                       isProfileScreen = false;
                     });
                   },
-                  icon: Icon(Icons.arrow_back_ios),
-                  iconSize: 30,
+                  icon: Icon(Icons.clear_outlined),
+                  iconSize: 40,
                   color: Colors.indigo[700],
                 )
               : IconButton(
                   onPressed: () {
                     setState(() {
-                      xOffset = 250;
+                      xOffset = 300;
                       yOffset = 150;
                       scaleFactor = 0.6;
                       isProfileScreen = true;
                     });
                   },
-                  icon: Icon(Icons.menu),
-                  iconSize: 30,
+                  icon: Icon(Icons.clear_all_outlined),
+                  iconSize: 40,
                   color: Colors.indigo[700],
                 ),
           title: Text(
